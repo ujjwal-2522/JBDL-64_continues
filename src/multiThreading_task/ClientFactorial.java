@@ -14,7 +14,7 @@ public class ClientFactorial {
         long start=System.currentTimeMillis();
 //        Thread thread1=new Thread();
 //        Thread thread2=new Thread();
-        Arrays.stream(num2).forEach(i ->{
+        Arrays.stream(num).forEach(i ->{
         FactorialMT factorialMT=new FactorialMT(i);
         Thread thread=new Thread(factorialMT);
         thread.start();
